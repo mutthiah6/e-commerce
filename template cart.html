@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+    <title>Your Cart</title>
+</head>
+<body>
+    <h1>Your Cart</h1>
+    {% for item in cart %}
+        <p>{{ item.name }} - Rs. {{ item.price }}</p>
+    {% endfor %}
+    <h3>Total: Rs. {{ total }}</h3>
+    <a href="{{ url_for('checkout') }}">Checkout</a>
+    <br><a href="{{ url_for('index') }}">Continue Shopping</a>
+</body>
+</html>

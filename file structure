@@ -1,0 +1,6 @@
+clothing_store/
+├── app.py
+├── templates/
+│   ├── index.html
+│   ├── cart.html
+│   └── checkout.html
